@@ -1,0 +1,41 @@
+{
+    "id": "water",
+    "common_name": "Water",
+    "formula": "H2O",
+    "mol_weight_gmol": 18.0152833,
+    "critical": {
+        "temp_K": 647.096,
+        "pressure_Pa": 22064000,
+        "specific_vol_m3/mol": 0.00056
+    },
+    "ref_state": {
+        "temp_K": 298.15,
+        "pressure_Pa": 101325,
+        "enthalpy_J_mol": 0.0,
+        "entropy_J_mol_K": 0.0
+    },
+    "acentric_factor": 0.344,
+    "density":{
+        "formula": "(((((a*T+b)*T+c)*T+d)*T+e)*T+f) / (1+g*T)",
+        "temp_scale": "Celsius",
+        "units": "g/mL",
+        "validity_range": [-30,150],
+        "coefficients": {
+            "a": -2.8054253E-10,
+            "b": 1.0556302E-7,
+            "c": -4.6170461E-5,
+            "d": -0.0079870401,
+            "e": 16.945176,
+            "f": 999.83952,
+            "g": 0.01687985
+        }
+    },
+    "heat_capacity": {
+        "liquid": {
+            "model": "shomate",
+            "coefficients": {
+                "a": ""
+            }
+        }
+    }
+}
