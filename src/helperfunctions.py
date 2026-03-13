@@ -21,3 +21,8 @@ def interpolate(x1, y1, x2, y2, x):
     """
     y = y1 + (y2 - y1) * (x - x1) / (x2 - x1)
     return y
+
+def mol_to_mass(value, compound):
+    data = dataread(compound)
+    molar_mass = data["mol_weight_gmol"]
+    return value / molar_mass * 1000 # Convert from J/(mol*K) to J/(kg*K)
